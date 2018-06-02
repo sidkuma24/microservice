@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		var payload = ['11', '22', '33'];
+		var	url = 'http://localhost:3000/report/generate/';
+
+		var data = {'payload': payload};
+
+		// $(document).ready(function(){
+		$.post(url, data, function(data, status){
+			console.log(data);
+			console.log(status);
+		});
+		
+	</script>
+	</head>
+<body>
+</body>
+</html>
+
